@@ -10,33 +10,62 @@
 
 </head>
 <body>
-    <header>
-                
+    <header>         
+        
+        <div class="menu">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Info</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <h1>Trailermarine</h1>
-    <div class="menu"> </div>
-</header>
+    </header>
 
-<div class="caixona"> 
-    <div class="minicaixa">
-    <div class="Cadastro">Cadastro</div>
-            Preencha seus dados:
-
-            </select>
-            <br> <br>
-            <div class="caixa"><input type="text" class="caixalarga" id="nome" placeholder="Nome"></div>
-            <br> <br>
-            <div class="caixa"><input maxlength="11" type="text" onkeypress="return onlynumber();" class="caixalarga" id="CPF" placeholder="CPF"></div>
-            <br> <br>
-            <div class="caixa"><input type="text" class="caixalarga" id="TELEFONE" placeholder="Telefone"></div>
-            <br> <br>
-            <div class="caixa"><input type="text" class="caixalarga" id="EMAIL" placeholder="Email"></div>
-            <br> <br>
-            <div class="botoes">
-            <button align="right" class="BT1">CADASTRAR </button>     <button align="center" class="BT2">LIMPAR</button> </div>
+    <div class="caixona"> 
+        <div class="minicaixa">
+        <div class="Cadastro">Cadastro</div>
+                Preencha seus dados:
+                </select>
+                <br> <br>
+                <div class="caixa"><input type="text" class="caixalarga" id="nome" placeholder="Nome"></div>
+                <br> <br>
+                <div class="caixa"><input maxlength="11" type="text" onkeypress="return onlynumber();" class="caixalarga" id="CPF" placeholder="CPF"></div>
+                <br> <br>
+                <div class="caixa"><input maxlength="11" type="text" onkeypress="return onlynumber();" class="caixalarga" id="TELEFONE" placeholder="Telefone"></div>
+                <br> <br>
+                <div class="caixa"><input type="text" class="caixalarga" id="EMAIL" placeholder="Email"></div>
+                <br> <br>
+                <div class="botoes">
+                <button align="right" class="BT1">CADASTRAR </button>     <button align="center" class="BT2">LIMPAR</button> </div>
 
         </fieldset>
-
-    </div>
 </body>
 <script src="cadastro.js"></script>
 </html>
